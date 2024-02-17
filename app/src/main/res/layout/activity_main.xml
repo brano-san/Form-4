@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/constraint">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Введите ФИО:"
+            tools:layout_editor_absoluteX="17dp"
+            tools:layout_editor_absoluteY="18dp" />
+
+        <EditText
+            android:layout_marginLeft="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            android:id="@+id/editTextText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="ФИО" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText"
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Введите Ваш возраст:"
+            tools:layout_editor_absoluteX="17dp"
+            tools:layout_editor_absoluteY="18dp" />
+
+        <EditText
+            android:layout_marginLeft="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            android:id="@+id/editTextText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:text="Возраст" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText1"
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Введите Ваш номер телефона:"
+            tools:layout_editor_absoluteX="17dp"
+            tools:layout_editor_absoluteY="18dp" />
+
+        <EditText
+            android:layout_marginLeft="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            android:id="@+id/editTextText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
+            android:text="Номер телефона" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText2"
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Введите Ваш адрес почты:"
+            tools:layout_editor_absoluteX="17dp"
+            tools:layout_editor_absoluteY="18dp" />
+
+        <EditText
+            android:id="@+id/editTextText3"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginLeft="10dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:text="Адрес электронной почты"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Выберите Ваших любимых животных:"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
+
+        <CheckBox
+            android:layout_marginLeft="10dp"
+            android:id="@+id/checkBox"
+            android:layout_width="116dp"
+            android:layout_height="47dp"
+            android:text="Котики"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        <CheckBox
+            android:layout_marginLeft="10dp"
+            android:id="@+id/checkBox1"
+            android:layout_width="116dp"
+            android:layout_height="47dp"
+            android:text="Собаки"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
+            app:layout_constraintLeft_toRightOf="@+id/checkBox" />
+        <CheckBox
+            android:layout_marginLeft="10dp"
+            android:id="@+id/checkBox2"
+            android:layout_width="116dp"
+            android:layout_height="47dp"
+            android:text="Лев"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
+            app:layout_constraintLeft_toRightOf="@+id/checkBox1" />
+        <CheckBox
+            android:layout_marginLeft="10dp"
+            android:id="@+id/checkBox3"
+            android:layout_width="116dp"
+            android:layout_height="47dp"
+            android:text="Попугаи"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+        <CheckBox
+            android:layout_marginLeft="10dp"
+            android:id="@+id/checkBox4"
+            android:layout_width="116dp"
+            android:layout_height="47dp"
+            android:text="Тигр"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox2"
+            app:layout_constraintLeft_toRightOf="@+id/checkBox" />
+        <CheckBox
+            android:layout_marginLeft="10dp"
+            android:id="@+id/checkBox5"
+            android:layout_width="116dp"
+            android:layout_height="47dp"
+            android:text="Варан"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox2"
+            app:layout_constraintLeft_toRightOf="@+id/checkBox1" />
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox3"
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Выберите вашу позицию:" />
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView7"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Работа за деньги" />
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Волонтёр"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rg"
+            android:id="@+id/tv10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Введите желаемую зарплату:"
+            tools:layout_editor_absoluteX="17dp"
+            tools:layout_editor_absoluteY="18dp" />
+
+        <EditText
+            android:layout_marginLeft="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv10"
+            android:id="@+id/tv11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text="Введите желаемую зарплату" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
